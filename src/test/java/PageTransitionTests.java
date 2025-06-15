@@ -110,6 +110,7 @@ public class PageTransitionTests extends BaseTest {
         openBaseUrl();
         mainPage.clickFillingsTab();//Так как булки активен и на него нельзя сделать клик сначала кликаем на начинки а потом на булки
         mainPage.clickBunsTab();//кликаем на булки
+        Thread.sleep(1000);
         mainPage.assertBunsTabIsActive();//Проверяем, что при клике на вкладку 'Булки' она становится активной"
     }
 

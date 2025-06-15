@@ -39,12 +39,13 @@ public class UserRegistrationTests extends BaseTest {
 
     @Test
     @Step("Успешная регистрация")
-    public void testRegistrationSuccess() {
+    public void testRegistrationSuccess() throws InterruptedException {
         registerPage.openRegisterUrl();
         registerPage.inputName(user.getName());
         registerPage.inputEmail(user.getEmail());
         registerPage.inputPassword(user.getPassword());
         registerPage.registerButtonClick();
+        Thread.sleep(1000);// добавили задержку
         token = registerPage.loginViaApi(user);// Проверяем созданного пользователя через авторизацию
     }
 
