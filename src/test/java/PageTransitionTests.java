@@ -13,12 +13,7 @@ import java.util.Collection;
 
 @RunWith(Parameterized.class)
 public class PageTransitionTests extends BaseTest {
-    private final DataTest user = new DataTest();
-    private String token;
     private final String browserType;
-    private final String password = "12345";
-
-
     public PageTransitionTests (String browserType) {
         this.browserType = browserType;
     }

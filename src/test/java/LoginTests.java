@@ -14,9 +14,8 @@ import java.util.Collection;
 
 @RunWith(Parameterized.class)
 public class LoginTests extends BaseTest {
-    private final DataTest user = new DataTest();
-    private final String browserType;
 
+    private final String browserType;
 
     public LoginTests(String browserType) {
         this.browserType = browserType;
